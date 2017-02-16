@@ -1,0 +1,226 @@
+/*body {
+    background: url('images/bg2.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}/*
+.s {
+    /*background: url('images/bg2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+.white {
+    color: white;
+}
+.hide {
+    display: none;
+}
+.hidden {
+    opacity: 0;
+    -webkit-animation: fadeOut .5s;
+}
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ar.center .navbar-inner {
+    text-align: center;
+}
+.constantW {
+    width: 130px;
+}
+#mainTitle {
+    font-size: 80px;
+    text-align: center;
+    font-family: typographEB;
+    padding-top: 60px;
+}
+.subtitle {
+    font-size: 40px;
+    text-align: center;
+    font-family: typographEB;
+    padding-top:10px;
+    color: #F0F0F0;
+    padding-bottom: 40px;
+}
+#About {
+    color: white;
+    padding-top: 65px;
+    font-family: quoteLIGHT;
+}
+#Portfolio {
+    padding-top: 65px;
+}
+#Portfolio img {
+    max-height: 100%;
+    max-width: 100%;
+}
+#Skills {
+    padding-top: 65px;
+}
+#Contact {
+    padding-top: 65px;
+    padding-bottom: 150px;
+}
+.boldQ {
+    font-family: quoteBOLD;
+}
+.quote {
+    border: 1px solid white;
+    text-align: center;
+}
+.centered {
+    text-align: center;
+    font-family: TypographUL;
+    font-size: 20px;
+}
+@font-face {
+    font-family: typographEB;
+    src: url("Typograph PRO/TYPOGRAPH PRO Extra Bold.ttf");
+}@font-face {
+    font-family: typographUL;
+    src: url("Typograph PRO/TYPOGRAPH PRO Light.ttf");
+}
+@font-face {
+    font-family: quoteBOLD;
+    src: url("quotes/roboto/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: quoteLIGHT;
+    src: url("quotes/roboto/Roboto-Thin.ttf");
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+#mainLogo {
+    width: 80px;
+    position:relative;
+    top:-4px;
+}#mainLogo2 {
+    width: 40px;
+    position:relative;
+    top:-4px;
+}
+.centeredNav {
+    align-content: center;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 20px;
+    font-family: typographUL;
+}
+.centeredNavFixed {
+    align-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, .90);
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: typographUL;
+    color: black;
+}
+.centeredNavFixed a {
+    color: #363636;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.centeredNavFixed a:hover {
+    color: black;
+}
+.centeredNav a {
+    color:#F2F2F2;
+}
+.centeredNav a:hover {
+    color:white;
+}
+#primaryBG {
+    background: url("images/mask3.png") top center no-repeat;
+    background-size: 100%;
+}
+body, html {height: 100%;}
+.header {
+    height: 100%;
+    width: 100%;
+    background: #eb01a5;
+    background: url(images/bg3.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.vertical-align {
+    color: white;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+.m-y-3 {
+    border-color: white;
+    background-color: white;
+}
+.m-y-2 {
+    border-color: grey;
+    background-color: grey;
+}
+#Skills img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.lead {
+    font-size: 16px;
+}
+@media (min-width:768px) {
+    .cover-row {
+        position: relative;
+        min-height: 100px; /* minimum height of cover stripe */
+    }
+    .profile-wrap {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    .profile-pic {
+        width: auto; /* maintain width/height aspect ratio */
+        height: 100%;
+    }
+}
+.transback {
+    border: none;
+    color:white;
+    text-align: center;
+    background: rgba(0,0,0, 0.5) !important;
+    padding: 0;
+    margin: 0;
+    vertical-align:text-bottom;
+}
+.centered {
+    align-content: center;
+}
+.rowA {
+    height: 600px;
+}
+.rowB {
+    height: 520px;
+}
+#Quote {
+    text-align: center;
+}
+.bold {
+    font-family: quoteBOLD;
+    font-size: 220%;
+}

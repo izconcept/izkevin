@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      <title>Welcome</title>
+      
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <link rel="stylesheet" href="animate.css" type="text/css">
+      <link rel="stylesheet" href="stylesheet.css" type="text/css">
+      
+      
+      <script type="text/javascript">
+          function inView(elem) {
+              var $elem = $(elem);
+              var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+              var viewportTop = $(scrollElem).scrollTop();
+              var viewportBottom = viewportTop + $(window).height();
+              var elemTop = Math.round( $elem.offset().top );
+              var elemBottom = elemTop + $elem.height();
+              
+              return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+          }
+      
+      </script>
+  </head>
+    <body>
+        
+        
+                
+                <h1>Photography</h1>
+                <hr class="m-y-2">
+                <h4>Page under Construction.</h4>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="parallax.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                /*var heightsA = $(".highcard").height();
+                $(".rowA").height(heightsA);
+                
+                var heightsB = $(".lowcard").height();
+                $(".rowB").height(heightsB);*/
+                
+                $(window).scroll(function() {
+                    var elem = $('.subtitle');
+                    elem.each(function() {
+                        if(inView(this)) {
+                            $(this).addClass("animated fadeIn");
+                        }
+                    });
+                    
+                    var elem2 = $(".view2").find('.row');
+                    elem2.each(function() {
+                        if(inView(this)) {
+                            $(this).addClass("animated fadeInUp");
+                        }
+                    });
+                    if(inView($(".quotes"))) {
+                        $('.quotes').addClass('animated zoomIn');
+                    }
+                    
+                    if($(window).scrollTop() > 200) {
+                        $('.centeredNav').addClass('hidden');
+                    } else {
+                        $('.centeredNav').removeClass('hidden');
+                    }
+                    if($(window).scrollTop() > 300) {
+                        $('.centeredNavFixed').removeClass('hide');
+                        $('.centeredNavFixed').removeClass('hidden');
+                    } else {
+                        $('.centeredNavFixed').addClass('hidden');
+                    }
+                });
+                
+                
+                $(function() {
+                  $('a[href*="#"]:not([href="#"])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('html, body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                  });
+                });
+                
+            });
+        </script>
+    </body>
+</html>
